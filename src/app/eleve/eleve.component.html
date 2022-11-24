@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-body">
+        
+        <app-eleve-item   [Nomeleve]="app.nom"
+        [Cineleve]="app.cin"
+        [Index]="i"
+        *ngFor="let app of Dataeleve; let i = index" >
+        
+      </app-eleve-item>  
+      <button class="btn btn-primary" (click)="onmodifier()">Allumer tout</button></div>
+</div>
